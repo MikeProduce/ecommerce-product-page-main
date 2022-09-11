@@ -9,6 +9,11 @@ a {
   font-family: "Kumbh Sans", sans-serif;
   text-decoration: none;
 }
+a:hover {
+  color: black;
+  border-bottom: 5px solid hsl(26, 100%, 55%);
+  line-height: 75px;
+}
 h1 {
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
@@ -20,16 +25,17 @@ h1 {
   display: flex;
   gap: 40px;
   align-items: center;
+  height: 80px;
 }
 .leftnav {
   display: flex;
   margin-right: 420px;
   gap: 50px;
   align-items: center;
+  height: 80px;
 }
 hr {
   margin-left: 100px;
-  margin-top: 30px;
   color: hsl(220, 14%, 75%);
   width: 86%;
 }
