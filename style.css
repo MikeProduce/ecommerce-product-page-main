@@ -68,6 +68,9 @@ hr {
   width: 15%;
   margin: 0 0 15px 15px;
 }
+.round-of-images:hover {
+  opacity: 50%;
+}
 .bottom-pictures {
   margin-top: 1rem;
   text-align: center;
@@ -140,6 +143,9 @@ hr {
   font-weight: 700;
   margin-left: 1rem;
 }
+.addcart:hover {
+  background-color: hsl(25, 100%, 70%);
+}
 .plus {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -147,6 +153,11 @@ hr {
 .minus {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+}
+
+.plus:hover,
+.minus:hover {
+  color: hsl(25, 100%, 70%);
 }
 .plus,
 .minus {
