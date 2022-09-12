@@ -41,40 +41,47 @@
     </div>
     <hr />
     <section class="shopping-section">
-      <div class="display-div">
-        <img
-          class="images"
-          src="images/image-product-1.jpg"
-          style="max-width: 100%"
-          alt=""
-        />
-        <div class="bottom-pictures">
-          <img
-            class="round-of-images"
-            id="round-of-images"
-            src="images/image-product-3-thumbnail.jpg"
-            alt=""
-          />
-          <img
-            class="round-of-images"
-            id="round-of-images"
-            src="images/image-product-4-thumbnail.jpg"
-            alt=""
-          />
-          <img
-            class="round-of-images"
-            id="round-of-images"
-            src="images/image-product-1-thumbnail.jpg"
-            alt=""
-          />
-          <img
-            class="round-of-images"
-            id="round-of-images"
-            src="images/image-product-2-thumbnail.jpg"
-            alt=""
-          />
+      <div class="slideContainer">
+        <div class="Slide">
+        <img class="big-img" src="images/image-product-1.jpg" />
+        <div class="Caption">Photo 1</div>
         </div>
-      </div>
+        <div class="Slide">
+        <img
+        class="big-img" src="images/image-product-2.jpg" />
+        <div class="Caption">Photo 2</div>
+        </div>
+        <div class="Slide">
+        <img
+        class="big-img"
+         src="images/image-product-3.jpg" />
+        <div class="Caption">Photo 3</div>
+        </div>
+        <div class="Slide">
+          <img class="big-img" src="images/image-product-4.jpg" />
+          <div class="Caption">Photo 4</div>
+          </div>
+        <a class="prevBtn"></a>
+        <a class="nextBtn"></a>
+        </div>
+        <br />
+        <iv class="thumbnail">
+        <div class="imageCol">
+        <img class="thumbImage" src="images/image-product-1-thumbnail.jpg" style="width:100%" onclick="setSlide(1)" alt="The Woods">
+        </div>
+        <div class="imageCol">
+        <img class="thumbImage" src="images/image-product-2-thumbnail.jpg" style="width:100%" onclick="setSlide(2)" alt="Cinque Terre">
+        </div>
+        <div class="imageCol">
+        <img class="thumbImage" src="images/image-product-3-thumbnail.jpg" style="width:100%" onclick="setSlide(3)" alt="Mountains and fjords">
+        </div>
+        <div class="imageCol">
+          <img class="thumbImage" src="images/image-product-4-thumbnail.jpg" style="width:100%" onclick="setSlide(4)" alt="Mountains and fjords">
+          </div>
+        </div>
+        </div>
+      <!-- Container for the image gallery -->
+      
       <div class="display-div1">
         <div class="sized-div">
           <p class="sneaker-logo">SNEAKER COMPANY</p>
