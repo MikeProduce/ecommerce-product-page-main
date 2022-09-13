@@ -26,12 +26,12 @@ images.addEventListener("click", function (event) {
 function setSlide(number) {
   clearSelected();
   currentSlide(number);
-  document.querySelectorAll(".thumbImage")[number - 1].style.borderBottom =
-    "6px solid purple";
+  document.querySelectorAll(".thumbImage")[number - 1].style.border =
+    "3px solid orange";
 }
 function clearSelected() {
   Array.from(document.querySelectorAll(".thumbImage")).forEach(
-    (item) => (item.style.borderBottom = "")
+    (item) => (item.style.border = "")
   );
 }
 document.querySelector(".prevBtn").addEventListener("click", () => {
