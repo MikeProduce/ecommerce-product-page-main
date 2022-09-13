@@ -4,6 +4,10 @@ const minus = document.getElementById("minus");
 const add = document.getElementById("plus");
 const number1 = document.getElementById("num");
 const image = document.getElementById("image");
+const image1 = document.getElementById("image1");
+const image2 = document.getElementById("image2");
+const image3 = document.getElementById("image3");
+const allImages = [image, image1, image2, image3];
 
 let i = 0;
 let amount = i;
@@ -23,6 +27,7 @@ function setSlide(number) {
   document.querySelectorAll(".thumbImage")[number - 1].style.border =
     "3px solid orange";
 }
+
 function clearSelected() {
   Array.from(document.querySelectorAll(".thumbImage")).forEach(
     (item) => (item.style.border = "")
@@ -39,8 +44,8 @@ function currentSlide(n) {
   showSlides((slideIndex = n));
 }
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("Slide");
+  let i;
+  const slides = document.getElementsByClassName("Slide");
   if (n > slides.length) {
     slideIndex = 1;
   }
