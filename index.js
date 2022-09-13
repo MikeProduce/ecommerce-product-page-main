@@ -16,6 +16,8 @@ minus.addEventListener("click", function () {
   number.innerHTML = amount;
 });
 
+// Miguel you left off trying to figure out wtf is going on with this code you are trying to convert the onclick in html to eventlisteners in javascript
+
 function setSlide(number) {
   clearSelected();
   currentSlide(number);
