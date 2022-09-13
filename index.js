@@ -3,7 +3,6 @@
 const minus = document.getElementById("minus");
 const add = document.getElementById("plus");
 const number = document.getElementById("num");
-const images = document.getElementById("round-of-images");
 
 let i = 0;
 let amount = i;
@@ -17,12 +16,6 @@ minus.addEventListener("click", function () {
   number.innerHTML = amount;
 });
 
-images.addEventListener("click", function (event) {
-  if (event.target.nodeName == "IMG") {
-    event.target.style.border = "3px solid orange";
-  }
-});
-
 function setSlide(number) {
   clearSelected();
   currentSlide(number);
@@ -34,12 +27,6 @@ function clearSelected() {
     (item) => (item.style.border = "")
   );
 }
-document.querySelector(".prevBtn").addEventListener("click", () => {
-  changeSlides(-1);
-});
-document.querySelector(".nextBtn").addEventListener("click", () => {
-  changeSlides(1);
-});
 var slideIndex = 1;
 showSlides(slideIndex);
 function changeSlides(n) {
