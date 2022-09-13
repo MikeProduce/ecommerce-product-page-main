@@ -2,21 +2,20 @@
 
 const minus = document.getElementById("minus");
 const add = document.getElementById("plus");
-const number = document.getElementById("num");
+const number1 = document.getElementById("num");
+const image = document.getElementById("image");
 
 let i = 0;
 let amount = i;
 
 add.addEventListener("click", function () {
   amount += 1;
-  number.innerHTML = amount;
+  number1.innerHTML = amount;
 });
 minus.addEventListener("click", function () {
   amount -= 1;
-  number.innerHTML = amount;
+  number1.innerHTML = amount;
 });
-
-// Miguel you left off trying to figure out wtf is going on with this code you are trying to convert the onclick in html to eventlisteners in javascript
 
 function setSlide(number) {
   clearSelected();
@@ -29,8 +28,10 @@ function clearSelected() {
     (item) => (item.style.border = "")
   );
 }
-var slideIndex = 1;
+
+let slideIndex = 1;
 showSlides(slideIndex);
+
 function changeSlides(n) {
   showSlides((slideIndex += n));
 }
