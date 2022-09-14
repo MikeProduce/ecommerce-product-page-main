@@ -218,13 +218,7 @@ hr {
 .thumbImage:hover {
   opacity: 0.5;
 }
-@media only screen and (max-width: 450px) {
-  .prevBtn,
-  .nextBtn,
-  .Caption {
-    font-size: 16px;
-  }
-}
+
 
 /* The modal  */
 /* The Modal (background) */
@@ -241,17 +235,25 @@ hr {
   background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
 }
 
+.Slide1{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Modal Content/Box */
 .modal-content {
   margin: 8% auto; /* 15% from the top and centered */
   padding: 20px;
-  width: 60%; /* Could be more or less, depending on screen size */
+  width: 50%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
 .close {
+  top: 5%;
+  left: 65%;
+  position: absolute;
   color: white;
-  font-size: 20px;
+  font-size: 40px;
   font-weight: bold;
 }
 
@@ -261,3 +263,4 @@ hr {
   text-decoration: none;
   cursor: pointer;
 }
+

@@ -38,6 +38,11 @@ function clearSelected() {
   );
 }
 
+// next / previous controls 
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -107,4 +112,4 @@ window.addEventListener("click", function (event) {
   }
 });
 
-// miguel you left off trying to get the fucking pictures to appear on the modal ugh you fucking suck
+// miguel idk wtf is going on but youre making it happen lol 
