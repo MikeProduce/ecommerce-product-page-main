@@ -23,6 +23,11 @@ minus.addEventListener("click", function () {
   number1.innerHTML = amount;
 });
 
+// next / previous controls
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
 // pictures and displays of the images
 
 function setSlide(number) {
@@ -36,11 +41,6 @@ function clearSelected() {
   Array.from(document.querySelectorAll(".thumbImage")).forEach(
     (item) => (item.style.border = "")
   );
-}
-
-// next / previous controls 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
 }
 
 let slideIndex = 1;
@@ -62,7 +62,7 @@ function showSlides(n) {
   }
   if (n < 1) {
     slideIndex = slides.length;
-    slideIndex = slides1.legnth;
+    slideIndex = slides1.length;
   }
 
   // idkk wtf i did tbh lmaoooo i need to make this look better fuck
@@ -112,4 +112,20 @@ window.addEventListener("click", function (event) {
   }
 });
 
-// miguel idk wtf is going on but youre making it happen lol 
+// miguel idk wtf is going on but youre making it happen lol
+
+// navbar section
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+// window.onscroll = function () {
+//   scrollFunction();
+// };
+
+// function scrollFunction() {
+//   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+//     document.getElementById("navbar").style.padding = "30px 10px";
+//     document.getElementById("logo").style.fontSize = "25px";
+//   } else {
+//     document.getElementById("navbar").style.padding = "80px 10px";
+//     document.getElementById("logo").style.fontSize = "35px";
+//   }
+// }
