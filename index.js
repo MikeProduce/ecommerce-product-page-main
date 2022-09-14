@@ -19,8 +19,8 @@ add.addEventListener("click", function () {
   number1.innerHTML = amount;
 });
 minus.addEventListener("click", function () {
-  amount -= 1;
-  number1.innerHTML = amount;
+  amount = amount <= 1 ? 0 : (amount -= 1);
+  return (number1.innerHTML = amount);
 });
 
 // next / previous controls
@@ -111,21 +111,3 @@ window.addEventListener("click", function (event) {
     modal.style.display = "none";
   }
 });
-
-// miguel idk wtf is going on but youre making it happen lol
-
-// navbar section
-// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-// window.onscroll = function () {
-//   scrollFunction();
-// };
-
-// function scrollFunction() {
-//   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-//     document.getElementById("navbar").style.padding = "30px 10px";
-//     document.getElementById("logo").style.fontSize = "25px";
-//   } else {
-//     document.getElementById("navbar").style.padding = "80px 10px";
-//     document.getElementById("logo").style.fontSize = "35px";
-//   }
-// }
