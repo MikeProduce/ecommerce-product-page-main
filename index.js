@@ -92,3 +92,23 @@ window.addEventListener("click", function (event) {
     modal.style.display = "none";
   }
 });
+
+// shopping cart modal
+
+// Get the modal
+var shoppingmodal = document.getElementById("myShoppingModal");
+
+// Get the button that opens the modal
+var Shopbtn = document.getElementById("myShoppingBtn");
+
+// When the user clicks on the button, open the modal
+Shopbtn.onclick = function () {
+  shoppingmodal.style.display = "block";
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == shoppingmodal) {
+    shoppingmodal.style.display = "none";
+  }
+};
