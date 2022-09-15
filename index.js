@@ -112,3 +112,30 @@ window.onclick = function (event) {
     shoppingmodal.style.display = "none";
   }
 };
+
+// accordion js
+
+// removing class list based on if the screen is big enough
+
+var acc = document.getElementsByClassName("accordion");
+
+// const removingFunc = function(n){
+//   if ()
+// }
+// miguel is left off trying to get the accordian to not show up based on the screen size 
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
