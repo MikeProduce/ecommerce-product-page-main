@@ -113,4 +113,4 @@ window.onclick = function (event) {
   }
 };
 
-// accordion js
+//acordian js //
