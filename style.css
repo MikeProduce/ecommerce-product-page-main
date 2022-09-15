@@ -2,11 +2,25 @@
   margin: 0;
   padding: 0;
 }
+h1,
+.navbar a,
+.sneaker-logo,
+.description-shoes,
+.money,
+.addcart,
+.off,
+.percentoff,
+.plus,
+.minus,
+.num {
+  font-family: "Kumbh Sans", sans-serif;
+}
 
 h1 {
-  font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
 }
+
+/* navbar section  */
 .profile-img {
   height: 55px;
   border: 3px solid white;
@@ -18,7 +32,6 @@ h1 {
   border-radius: 50%;
 }
 
-/* navbar section  */
 .navbar {
   overflow: hidden;
   width: 100%;
@@ -26,12 +39,10 @@ h1 {
   margin-left: 100px;
 }
 
-/* Style the navbar links */
 .navbar a {
   float: left;
   padding: 18px;
   color: hsl(220, 14%, 75%);
-  font-family: "Kumbh Sans", sans-serif;
   text-decoration: none;
   line-height: 45px;
   min-height: 70px;
@@ -42,7 +53,6 @@ h1 {
   line-height: 40px;
 }
 
-/* Style the logo */
 .navbar .logo {
   font-size: 35px;
   color: black;
@@ -110,7 +120,6 @@ hr {
 .sneaker-logo {
   margin-top: 5rem;
   color: hsl(26, 100%, 55%);
-  font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
   margin-bottom: 1rem;
 }
@@ -124,7 +133,6 @@ hr {
 .description-shoes {
   font-size: 16px;
   color: hsl(219, 9%, 45%);
-  font-family: "Kumbh Sans", sans-serif;
   margin-bottom: 3rem;
   line-height: 1.4rem;
 }
@@ -133,7 +141,6 @@ hr {
 }
 
 .money {
-  font-family: "Kumbh Sans", sans-serif;
   font-size: 1.7rem;
   font-weight: 700;
 }
@@ -147,13 +154,11 @@ hr {
   border-radius: 4px;
   margin-top: auto;
   margin-bottom: auto;
-  font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
 }
 .percentoff {
   color: hsl(220, 14%, 75%);
-  font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
   text-decoration: line-through;
   margin-bottom: 2rem;
@@ -164,7 +169,6 @@ hr {
   color: white;
   border-style: none;
   border-radius: 7px;
-  font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
   margin-left: 1rem;
 }
@@ -192,7 +196,6 @@ hr {
 .minus,
 .num {
   width: 15%;
-  font-family: "Kumbh Sans", sans-serif;
   background-color: hsl(223, 64%, 98%);
   border-style: none;
   height: 50px;
@@ -267,15 +270,14 @@ hr {
 /* The modal  */
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none;
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
   background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
 }
 
@@ -284,15 +286,13 @@ hr {
   margin-right: auto;
 }
 
-/* Modal Content/Box */
 .modal-content {
-  margin: 8% auto; /* 15% from the top and centered */
+  margin: 8% auto;
   padding: 20px;
-  width: 45%; /* Could be more or less, depending on screen size */
+  width: 45%;
   height: 100%;
 }
 
-/* The Close Button */
 .close {
   left: 85%;
   position: relative;
