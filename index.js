@@ -116,8 +116,10 @@ window.onclick = function (event) {
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 const icon = document.getElementById("icon");
+
 icon.addEventListener("click", function myFunction() {
     var x = document.getElementById("myTopnav");
+
     if (x.className === "topnav") {
         x.className += " responsive";
         x.style.width = "250px";
@@ -125,11 +127,10 @@ icon.addEventListener("click", function myFunction() {
         x.className = "topnav";
     }
 });
+function closeNav() {
+    document.getElementById("myTopnav").style.width = "0";
+    document.getElementById("myTopnav").classList.remove("responsive");
+}
 
 /* Set the width of the side navigation to 0 */
 // miguel you were trying to figure out how to get the navbar to go back to normal you just figured out that spaces matter when removing classes
-
-function closeNav() {
-    document.getElementById("myTopnav").style.width = "0";
-    document.getElementById("myTopnav").classList.remove(" responsive");
-}
