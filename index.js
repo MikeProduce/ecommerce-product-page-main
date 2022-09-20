@@ -128,16 +128,11 @@ icon.addEventListener("click", function myFunction() {
     }
 });
 
-function closeNav() {
-    var x = document.getElementById("myTopnav");
+// this button deletes the responsive class and also deletes the inline style css in the html
+const closebtn = document.getElementById("closebtn");
 
-    if (x.className === "topnav responsive") {
-        x.className -= " responsive";
-        x.style.width = "0";
-    } else {
-        x.className = "topnav";
-    }
-}
+closebtn.addEventListener("click", function closeNav() {
+    document.getElementById("myTopnav").style.removeProperty("width");
 
-/* Set the width of the side navigation to 0 */
-// miguel you were trying to figure out how to get the navbar to go back to normal you just figured out that spaces matter when removing classes
+    document.getElementById("myTopnav").className = "topnav";
+});
