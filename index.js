@@ -127,9 +127,16 @@ icon.addEventListener("click", function myFunction() {
         x.className = "topnav";
     }
 });
+
 function closeNav() {
-    document.getElementById("myTopnav").style.width = "0";
-    document.getElementById("myTopnav").classList.remove("responsive");
+    var x = document.getElementById("myTopnav");
+
+    if (x.className === "topnav responsive") {
+        x.className -= " responsive";
+        x.style.width = "0";
+    } else {
+        x.className = "topnav";
+    }
 }
 
 /* Set the width of the side navigation to 0 */

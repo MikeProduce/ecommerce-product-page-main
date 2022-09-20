@@ -47,6 +47,7 @@ h1 {
     line-height: 45px;
     min-height: 70px;
 }
+
 .navbar .nav-item:hover {
     color: black;
     border-bottom: 5px solid hsl(26, 100%, 55%);
@@ -348,6 +349,9 @@ hr {
 .topnav .closebtn {
     display: none;
 }
+/* .topnav {
+    display: flex;
+} */
 
 /* media querys
  */
@@ -385,7 +389,7 @@ hr {
         font-size: 20px;
         color: black;
         display: block;
-        transition: 0.3s;
+        transition: 0.6s;
         font-weight: 700;
     }
     .topnav.responsive .closebtn {
