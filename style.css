@@ -116,6 +116,7 @@ hr {
     color: hsl(26, 100%, 55%);
     font-weight: 700;
     margin-bottom: 1rem;
+    font-size: 100%;
 }
 .label-of-shoes {
     font-size: 3rem;
@@ -135,7 +136,7 @@ hr {
 }
 
 .money {
-    font-size: 1.7rem;
+    font-size: 150%;
     font-weight: 700;
 }
 .off {
@@ -149,7 +150,7 @@ hr {
     margin-top: auto;
     margin-bottom: auto;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 120%;
 }
 .percentoff {
     color: hsl(220, 14%, 75%);
@@ -448,6 +449,7 @@ hr {
     }
 
     .display-div1 {
+        margin-top: 0px;
         margin-left: auto;
         margin-right: auto;
         float: left;
@@ -455,7 +457,7 @@ hr {
         vertical-align: top;
         width: 100%;
         height: 100%;
-        margin-left: 100px;
+        /* margin-left: 100px; */
     }
     .big-img {
         /* margin-top: -70px; */
@@ -484,6 +486,58 @@ hr {
     }
     .thumbnail {
         display: none;
+    }
+    .sized-div {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        /* margin-top: 0px; */
+    }
+    .sneaker-logo {
+        margin-top: 0px;
+        font-size: 155%;
+    }
+    .description-shoes {
+        margin-top: 0px;
+        font-size: 150%;
+        line-height: 40px;
+    }
+    .label-of-shoes {
+        margin-bottom: 20px;
+    }
+
+    .buttons-div {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .addcart {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+        width: 100%;
+        height: 50px;
+        margin-bottom: 2rem;
+    }
+    .minus,
+    .num,
+    .plus {
+        width: 33.333333%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .miniflex {
+        gap: 20px;
+    }
+    .mobile-div {
+        display: flex;
+        /* gap: 100px; */
+        margin: auto;
+    }
+    .money,
+    .off,
+    .percent-off-mobile {
+        font-size: 200%;
+        margin: auto;
     }
 }
 
