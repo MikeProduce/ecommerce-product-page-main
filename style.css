@@ -507,6 +507,7 @@ hr {
     }
 
     .buttons-div {
+        margin-top: 1rem;
         flex-wrap: wrap;
         width: 100%;
     }
@@ -526,19 +527,33 @@ hr {
         margin-right: auto;
     }
     .miniflex {
-        gap: 20px;
+        gap: 30px;
     }
     .mobile-div {
+        /* margin-bottom: 1rem; */
         display: flex;
         /* gap: 100px; */
-        margin: auto;
+        /* margin: auto; */
+        /* float: right; */
     }
-    .money,
-    .off,
-    .percent-off-mobile {
+    .money {
         font-size: 200%;
-        margin: auto;
+        /* margin: auto; */
+    }
+    .off {
+        font-size: 200%;
+        margin: 0;
+        text-align: none;
+        width: fit-content;
+        height: fit-content;
+    }
+    .percentoff {
+        gap: 20px;
+        font-size: 200%;
+    }
+    .percent-off-mobile {
+        gap: 200px;
     }
 }
 
-/* miguel you left off trying to make your site responsive at 768px things are going good just keep going :] youre trying to make the nav bar alike btw  */
+/* miguel youre trying to figure out how to add gap with the 250 dollars and the 50% */
