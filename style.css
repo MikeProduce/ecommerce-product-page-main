@@ -480,9 +480,12 @@ hr {
     }
     .next.mobile {
         display: block;
+        float: right;
+        margin: 0;
     }
     .prev.mobile {
         display: block;
+        float: left;
     }
     .thumbnail {
         display: none;
@@ -527,18 +530,16 @@ hr {
         margin-right: auto;
     }
     .miniflex {
-        gap: 30px;
+        gap: 40px;
+        width: 100%;
     }
     .mobile-div {
-        /* margin-bottom: 1rem; */
+        width: 100%;
         display: flex;
-        /* gap: 100px; */
-        /* margin: auto; */
-        /* float: right; */
+        float: right;
     }
     .money {
         font-size: 200%;
-        /* margin: auto; */
     }
     .off {
         font-size: 200%;
