@@ -478,14 +478,18 @@ hr {
     .modal-content {
         display: block;
     }
-    .next.mobile {
+    .slideContainer > .next.mobile {
         display: block;
-        float: right;
-        margin: 0;
+        margin-right: 0;
+        /* position: relative; */
+        /* top: 50%; */
+        /* -ms-transform: translateY(-50%);
+        transform: translateY(-50%); */
     }
     .prev.mobile {
         display: block;
         float: left;
+        /* top: 100%; */
     }
     .thumbnail {
         display: none;
@@ -530,7 +534,7 @@ hr {
         margin-right: auto;
     }
     .miniflex {
-        gap: 40px;
+        gap: 30px;
         width: 100%;
     }
     .mobile-div {
