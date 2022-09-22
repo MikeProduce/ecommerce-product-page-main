@@ -478,18 +478,16 @@ hr {
     .modal-content {
         display: block;
     }
-    .slideContainer > .next.mobile {
+
+    .next.mobile {
         display: block;
         margin-right: 0;
-        /* position: relative; */
-        /* top: 50%; */
-        /* -ms-transform: translateY(-50%);
-        transform: translateY(-50%); */
+        position: relative;
+        top: 100;
     }
     .prev.mobile {
         display: block;
         float: left;
-        /* top: 100%; */
     }
     .thumbnail {
         display: none;
@@ -559,6 +557,17 @@ hr {
     .percent-off-mobile {
         gap: 200px;
     }
+    .navbar .navbar-right {
+        float: right;
+        margin: 0;
+    }
+    /* .profile-img {
+        max-height: 50px;
+    } */
+    /* .nav-right {
+        height: 100%;
+        width: 100%;
+    } */
 }
 
 /* miguel youre trying to figure out how to add gap with the 250 dollars and the 50% */
