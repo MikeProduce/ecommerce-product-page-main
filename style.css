@@ -488,16 +488,19 @@ hr {
         margin-right: 0;
         position: relative;
         float: right;
-        top: 175px;
+        top: 150pt;
         right: 20px;
-        min-height: 100%;
-        min-width: 100%;
+        min-width: 70px;
+        max-height: auto;
     }
     .prev.mobile {
+        position: relative;
         display: block;
         float: left;
         left: 20px;
-        top: 175px;
+        top:150pt
+        min-width: 70px;
+        max-height: auto;
     }
     .thumbnail {
         display: none;
@@ -584,10 +587,7 @@ hr {
         max-width: 30%;
         height: auto;
     }
-    /* .navbar-right {
-        margin-top: 100px;
-        margin-bottom: auto;
-    } */
+    
 }
 
 /* miguel youre trying to figure out how to add gap with the 250 dollars and the 50% */
