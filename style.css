@@ -422,9 +422,13 @@ hr {
     .navbar {
         margin-top: 0px;
         margin-left: 20px;
+        max-width: auto;
+        height: 80px;
     }
     .navbar .logo {
-        font-size: 50px;
+        font-size: 30px;
+        padding-left: 0;
+        padding-right: 0;
     }
     .topnav .icon {
         width: 30px;
@@ -483,11 +487,17 @@ hr {
         display: block;
         margin-right: 0;
         position: relative;
-        top: 100;
+        float: right;
+        top: 175px;
+        right: 20px;
+        min-height: 100%;
+        min-width: 100%;
     }
     .prev.mobile {
         display: block;
         float: left;
+        left: 20px;
+        top: 175px;
     }
     .thumbnail {
         display: none;
@@ -560,13 +570,23 @@ hr {
     .navbar .navbar-right {
         float: right;
         margin: 0;
+        padding-top: 20px;
     }
-    /* .profile-img {
-        max-height: 50px;
-    } */
-    /* .nav-right {
-        height: 100%;
-        width: 100%;
+    .shoppingcart-content {
+        max-width: 80%;
+    }
+    .svg {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 0px;
+    }
+    .profile-img {
+        max-width: 30%;
+        height: auto;
+    }
+    /* .navbar-right {
+        margin-top: 100px;
+        margin-bottom: auto;
     } */
 }
 
