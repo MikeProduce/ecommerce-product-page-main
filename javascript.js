@@ -3,7 +3,7 @@ if (!productsInCart) {
     productsInCart = [];
 }
 const parentElement = document.querySelector("#buyItems");
-const products = document.querySelectorAll(".product-under");
+const product = document.querySelector(".product-under");
 const cartSumPrice = document.querySelectorAll("#sum-prices");
 
 const countTheSumPrice = function () {
@@ -55,7 +55,7 @@ function updateProductsInCart(product) {
     productsInCart.push(product);
 }
 
-products.forEach((product) => {
+product.forEach((product) => {
     product.addEventListener("click", (e) => {
         if (e.target.classList.contains("addTocart")) {
             const prodcutID = e.target.dataset.productId;
