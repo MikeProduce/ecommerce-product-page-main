@@ -18,8 +18,7 @@ const updateShoppingCartHTML = function () {
     localStorage.setItem("ShoppingCart", JSON.stringify(productsInCart));
     if (productsInCart.length > 0) {
         let result = productsInCart.map((product) => {
-            return;
-            `
+            return `
             <li class="buyItem">
         <img src ='${product.image}'>
         <div>
@@ -34,11 +33,10 @@ const updateShoppingCartHTML = function () {
       </li>
       `;
         });
-        parentElement.innerHTML = result.join("");
+        parentElement.innerHTML = result.join(" ");
         document.querySelector(".checkout").classList.remove("hidden");
         cartSumPrice.innerHTML = "$" + countTheSumPrice();
     } else {
-        // remember to set the price cart to have an h4 tag that says it is empty create a tag like the p one you have now ;
         document.querySelector(".checkout").classList.add("hidden");
         parentElement.innerHTML = "This is empty";
         cartSumPrice.innerHTML = "";
@@ -61,7 +59,7 @@ products.forEach((product) => {
     product.addEventListener("click", (e) => {
         if (e.target.classList.contains("addTocart")) {
             const prodcutID = e.target.dataset.productId;
-            const productName = product.querySelector("productName").innerHTML;
+            const productName = product.querySelector(".productName").innerHTML;
             const productPrice =
                 product.querySelector("productValue").innerHTML;
             const productImage = product.querySelector("img").src;
