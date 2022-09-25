@@ -51,8 +51,10 @@
   <!-- Modal content -->
   <div class="shoppingcart-content">
     <ul id="buyItems">
-      <li id="sum-prices"></li>
-      <h4 class="checkout">Shopping items should go here</h4>
+      <div class="sum-prices">
+      <h6 id="sum-prices"></h6>
+      </div>
+      <h4 class="empty">Shopping items should go here</h4>
       <!-- <li class="buyItem">
         <img src ='Images/products-images/Mobiles/galaxynote10.png'>
         <div>
@@ -65,8 +67,9 @@
           </div>
         </div>
       </li> -->
-      <li class="buyItem"></li>
+
     </ul>
+  <button class="btn checkout hidden">check out</button>
     
   </div>
 </div>
@@ -191,7 +194,7 @@
       <div class="display-div1">
         <div class="sized-div">
           <p class="sneaker-logo">SNEAKER COMPANY</p>
-          <h1 class="label-of-shoes" id="productName">Fall Limited Edition Sneakers</h1>
+          <h1 class="label-of-shoes productName">Fall Limited Edition Sneakers</h1>
           <p class="description-shoes">
             These low-profile sneakers are your perfect casual wear companion.
             Featuring a durable rubber outer sole,they'll withstand everything
@@ -199,7 +202,7 @@
           </p>
           <div class="mobile-div">
           <div class="miniflex">
-            <p class="money" id="productValue">$125.00</p>
+            <p class="money priceValue">$125.00</p>
             <p class="off">50%</p>
           </div>
           <div class="percent-off-mobile">
@@ -237,6 +240,5 @@
     </section>
     <script src="index.js"></script>
     <script src="javascript.js"></script>
-
   </body>
 </html>
