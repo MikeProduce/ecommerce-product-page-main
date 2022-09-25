@@ -50,6 +50,21 @@
 <div id="myShoppingModal" class="shopping-modal">
   <!-- Modal content -->
   <div class="shoppingcart-content">
+    <ul id="buyItems">
+      <!-- <li class="buyItem">
+        <img src ='Images/products-images/Mobiles/galaxynote10.png'>
+        <div>
+          <h5>Products Name</h5>
+          <h6>$199</h6>
+          <div>
+            <button class="button-minus" data-id = "1">-</button>
+            <span class="countOfProduct">1</span>
+            <button class="button-plus" data-id="1">+</button>
+          </div>
+        </div>
+      </li> -->
+      <li class="buyItem"></li>
+    </ul>
     <p>Shopping items should go here</p>
   </div>
 </div>
@@ -193,7 +208,8 @@
             <button class="minus" id="minus">-</button>
             <p class="num" id="num">0</p>
             <button class="plus" id="plus">+</button>
-            <button class="addcart">
+            <button class="addcart addTocart" data-product-id="1">
+              
               <!-- <div > -->
                 <svg
                   class="cart-icon"
