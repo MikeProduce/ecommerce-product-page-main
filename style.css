@@ -653,7 +653,7 @@ h6::after {
         margin-right: auto;
     }
     .miniflex {
-        gap: 30px;
+        gap: 0px;
         width: 100%;
     }
     .mobile-div {
@@ -667,6 +667,7 @@ h6::after {
     .off {
         font-size: 200%;
         margin: 0;
+        margin-left: 5%;
         text-align: none;
         width: fit-content;
         height: fit-content;
@@ -723,10 +724,8 @@ h6::after {
     }
 
     .ParentElement {
-        /* padding: 30px 0; */
         text-align: left;
         font-family: "Kumbh Sans", sans-serif;
-        /* color: hsl(220, 14%, 75%); */
     }
     .buyItem {
         display: flex;
