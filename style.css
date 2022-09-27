@@ -84,11 +84,17 @@ h1 {
 }
 
 /* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
+.cart {
+    font-weight: 700;
+    font-family: "Kumbh Sans", sans-serif;
+    padding: 20px;
+}
 
 .devider {
-    margin-left: 100px;
+    margin-left: auto;
+    margin-right: auto;
     color: hsl(220, 14%, 75%);
-    width: 86%;
+    width: 80%;
 }
 
 /* display section  */
@@ -350,11 +356,9 @@ h1 {
 .shoppingcart-content {
     text-align: left;
     background-color: #fefefe;
-    margin: 8% 0% 0% 65%; /* 15% from the top and centered */
-    padding: 20px;
     border: 1px solid #888;
     width: 20%; /* Could be more or less, depending on screen size */
-    height: 20%;
+    height: 30%;
     position: absolute;
     top: 60px;
     right: 5%;
@@ -380,8 +384,7 @@ h1 {
 .shopping-cartline {
     margin-bottom: 20px;
     color: hsl(220, 14%, 75%);
-    width: 100%;
-    padding: 0;
+    /* width: 100%; */
 }
 
 /* .topnav {
@@ -633,17 +636,16 @@ h1 {
     .shoppingcart-content {
         text-align: left;
         background-color: #fefefe;
-        margin: 8% 0% 0% 65%; /* 15% from the top and centered */
-        padding: 20px;
+        /* margin: 8% 0% 0% 65%; */
         border: 1px solid #888;
         width: 100%; /* Could be more or less, depending on screen size */
-        max-height: 40%;
+        max-height: 400px;
         position: absolute;
         top: 60px;
         right: 5%;
         /* left: 10%; */
         border-radius: 10px;
-        max-width: 80%;
+        max-width: 90%;
     }
 }
 
