@@ -44,7 +44,8 @@ h1 {
     overflow: hidden;
     width: 90%;
     margin-top: 50px;
-    margin-left: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .navbar a {
@@ -94,7 +95,7 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     color: hsl(220, 14%, 75%);
-    width: 80%;
+    width: 90%;
 }
 
 /* display section  */
@@ -261,12 +262,12 @@ h1 {
     text-align: center;
 }
 .imageCol {
-    width: 15%;
-    margin-right: 10px;
+    width: 20%;
+    margin-right: 8px;
     display: inline-block;
 }
 .imageCol:nth-of-type(1) {
-    margin-left: 10px;
+    margin-left: 8px;
 }
 .thumbImage {
     height: 100%;
