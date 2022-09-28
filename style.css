@@ -164,7 +164,7 @@ h1 {
     margin-top: auto;
     margin-bottom: auto;
     font-weight: 700;
-    font-size: 120%;
+    font-size: 100%;
 }
 .percentoff {
     color: hsl(220, 14%, 75%);
@@ -220,10 +220,10 @@ h1 {
     display: flex;
 }
 .cart-icon {
-    margin-right: 0.5rem;
+    margin-right: 0.2rem;
     fill: white;
     width: 10%;
-    height: 15.5px;
+    height: 20px;
 }
 
 /* slides section  */
@@ -525,20 +525,20 @@ h6::after {
 @media screen and (max-width: 768px) {
     .navbar {
         margin-top: 0px;
-        margin-left: 20px;
-        max-width: auto;
+        margin-left: 10px;
+        /* max-width: 100%; */
         height: 80px;
     }
     .navbar .logo {
-        font-size: 30px;
+        font-size: 32px;
         padding-left: 0;
         padding-right: 0;
     }
     .topnav .icon {
         width: 20px;
         height: 70px;
-        top: -25px;
-        /* margin-right: 10px; */
+        top: -20px;
+        margin-left: 2.5%;
     }
 
     .shopping-section {
@@ -644,6 +644,7 @@ h6::after {
         height: 50px;
         margin-bottom: 2rem;
         border-radius: 10px;
+        font-size: 18px;
     }
     .minus,
     .num,
@@ -665,7 +666,7 @@ h6::after {
         font-size: 200%;
     }
     .off {
-        font-size: 200%;
+        font-size: 160%;
         margin: 0;
         margin-left: 5%;
         text-align: none;
@@ -674,7 +675,7 @@ h6::after {
     }
     .percentoff {
         gap: 20px;
-        font-size: 200%;
+        font-size: 160%;
     }
     .percent-off-mobile {
         gap: 200px;
@@ -691,7 +692,7 @@ h6::after {
         margin-right: 0px;
     }
     .profile-img {
-        max-width: 30%;
+        max-width: 25%;
         height: auto;
     }
     .shopping-modal {
@@ -787,8 +788,16 @@ h6::after {
     .insidemodal {
         color: hsl(219, 9%, 45%);
         font-family: "Kumbh Sans", sans-serif;
-        font-weight: 500;
-        margin-top: 50px;
+        font-weight: 700;
+        margin-top: 90px;
         text-align: center;
+        font-size: 1.15rem;
+    }
+    .cart {
+        font-size: 1.4rem;
+    }
+    .logolol {
+        height: 50px;
+        width: 150px;
     }
 }
