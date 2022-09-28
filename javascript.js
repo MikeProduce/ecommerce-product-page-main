@@ -39,11 +39,18 @@ addCart.addEventListener("click", function () {
         parentElement.innerHTML = result;
         //when a button is pushed on the inside it will delete the items and put a text that says there is nothing in the cart//
 
+        let amountOfItems = document.querySelector(".numlol");
+        // console.log(amountOfItems);
+        amountOfItems.style.display = "block";
+        let itemsBought = `${quantityItems}`;
+        amountOfItems.innerHTML = itemsBought;
+
         const deleteCart = document.querySelector(".delete");
 
         deleteCart.addEventListener("click", function () {
             let noItems = `<p class="insidemodal">Your cart is empty.</p>`;
             parentElement.innerHTML = noItems;
+            amountOfItems.style.display = "none";
         });
     } else {
         return;
