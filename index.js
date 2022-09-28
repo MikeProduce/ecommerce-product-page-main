@@ -2,7 +2,7 @@
 
 const minus = document.getElementById("minus");
 const add = document.getElementById("plus");
-const number1 = document.getElementById("num");
+const quantity = document.getElementById("num");
 const modal = document.getElementById("myModal");
 const btn = document.getElementById("myBtn");
 const btn1 = document.getElementById("myBtn1");
@@ -11,14 +11,25 @@ const btn3 = document.getElementById("myBtn3");
 let i = 0;
 let amount = i;
 
+const addItemsCount = [add,minus];
+
+addItemsCount.forEach(function(i){
+
+    i.addEventListener('click',function(){
+        console.log('i was clicked')
+    })
+})
+
+// miguel you are trying to refactor some code so that it uses up less lines 
+
 // add to how many shoes/product you want
 add.addEventListener("click", function () {
     amount += 1;
-    number1.innerHTML = amount;
+    quantity.innerHTML = amount;
 });
 minus.addEventListener("click", function () {
     amount = amount <= 1 ? 0 : (amount -= 1);
-    return (number1.innerHTML = amount);
+    return (quantity.innerHTML = amount);
 });
 
 // next / previous controls on modal

@@ -515,16 +515,16 @@ h6::after {
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 1080px) {
     .topnav.responsive {
-        height: 100%; /* 100% Full-height */
-        width: 0; /* 0 width - change this with JavaScript */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Stay on top */
+        height: 100%; 
+        width: 0; 
+        position: fixed; 
+        z-index: 1; 
         top: 0;
         left: 0;
-        background-color: white; /* Black*/
-        overflow-x: hidden; /* Disable horizontal scroll */
+        background-color: white; 
+        overflow-x: hidden; 
         padding-top: 60px;
-        transition: 0.6s; /* 0.5 second transition effect to slide in the sidenav */
+        transition: 0.6s;
     }
     .topnav.responsive .icon {
         display: none;
@@ -554,7 +554,6 @@ h6::after {
     .navbar {
         margin-top: 0px;
         margin-left: 10px;
-        /* max-width: 100%; */
         height: 80px;
     }
     .navbar .logo {
