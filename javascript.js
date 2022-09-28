@@ -4,7 +4,6 @@ const itemPic = document.querySelector(".big-img").src;
 const parentElement = document.querySelector(".ParentElement");
 const addCart = document.querySelector(".addcart");
 let quantityItems = document.querySelector(".num").innerHTML;
-console.log(quantityItems);
 
 const item = {
     name: itemName,
@@ -12,13 +11,10 @@ const item = {
     price: +basePrice,
 };
 
-// miguel you are currently working on how to update the UI so that the number value inputed is multiplied by the price
 addCart.addEventListener("click", function () {
     // only calls the num element when the button is clicked
     let quantityItems = document.querySelector(".num").innerHTML;
-    console.log(quantityItems);
-
-    //when the add to cart button is pushed it will add this text/imgs of the items bought//
+   //when the add to cart button is pushed it will add this text/imgs of the items bought//
     if (quantityItems > 0) {
         let result = `<li class="buyItem">
   <div class="inlineShop">
@@ -47,11 +43,12 @@ addCart.addEventListener("click", function () {
 </li>`;
         parentElement.innerHTML = result;
         //when a button is pushed on the inside it will delete the items and put a text that says there is nothing in the cart//
-
         let amountOfItems = document.querySelector(".numlol");
-        // console.log(amountOfItems);
+
         amountOfItems.style.display = "block";
+
         let itemsBought = `${quantityItems}`;
+
         amountOfItems.innerHTML = itemsBought;
 
         const deleteCart = document.querySelector(".delete");
@@ -61,7 +58,6 @@ addCart.addEventListener("click", function () {
             parentElement.innerHTML = noItems;
             amountOfItems.style.display = "none";
         });
-    } else {
-        return;
-    }
+    } else {return;}
+    
 });

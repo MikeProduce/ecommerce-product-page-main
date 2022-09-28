@@ -3,9 +3,7 @@
 const minus = document.getElementById("minus");
 const add = document.getElementById("plus");
 const number1 = document.getElementById("num");
-// Get the modal
 const modal = document.getElementById("myModal");
-// Get the button that opens the modal
 const btn = document.getElementById("myBtn");
 const btn1 = document.getElementById("myBtn1");
 const btn2 = document.getElementById("myBtn2");
@@ -28,15 +26,13 @@ function plusSlides(n) {
     showSlides((slideIndex += n));
 }
 
-// pictures and displays of the images
-
+// pictures and displays of the images that are selected
 function setSlide(number) {
     clearSelected();
     currentSlide(number);
     document.querySelectorAll(".thumbImage")[number - 1].style.border =
         "3px solid orange";
 }
-
 function clearSelected() {
     Array.from(document.querySelectorAll(".thumbImage")).forEach(
         (item) => (item.style.border = "")
@@ -73,7 +69,7 @@ function showSlides(n) {
 // Get the <span> element that closes the modal
 const span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on the button, open the modal
+// When the user clicks on the button, open the modal 
 const btns = [btn, btn1, btn2, btn3];
 btns.forEach((number) => {
     number.addEventListener("click", function () {
@@ -87,7 +83,6 @@ span.addEventListener("click", function () {
 });
 
 // When the user clicks anywhere outside of the modal, close it
-
 window.addEventListener("click", function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
@@ -95,39 +90,31 @@ window.addEventListener("click", function (event) {
 });
 
 // shopping cart modal
-
-// Get the modal
-var shoppingmodal = document.getElementById("myShoppingModal");
-
+const shoppingmodal = document.getElementById("myShoppingModal");
 // Get the button that opens the modal
-var Shopbtn = document.getElementById("myShoppingBtn");
-
+const Shopbtn = document.getElementById("myShoppingBtn");
 // When the user clicks on the button, open the modal
 Shopbtn.onclick = function () {
     shoppingmodal.style.display = "block";
 };
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
     if (event.target == shoppingmodal) {
         shoppingmodal.style.display = "none";
     }
 };
-
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 const icon = document.getElementById("icon");
-
 icon.addEventListener("click", function myFunction() {
-    var x = document.getElementById("myTopnav");
+    const topnav = document.getElementById("myTopnav");
 
-    if (x.className === "topnav") {
-        x.className += " responsive";
-        x.style.width = "250px";
+    if (topnav.className === "topnav") {
+        topnav.className += " responsive";
+        topnav.style.width = "250px";
     } else {
-        x.className = "topnav";
+        topnav.className = "topnav";
     }
 });
-
 // this button deletes the responsive class and also deletes the inline style css in the html
 const closebtn = document.getElementById("closebtn");
 
