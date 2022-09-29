@@ -13,16 +13,12 @@ let amount = i;
 
 const addItemsCount = [add,minus];
 
-addItemsCount.forEach(function(i){
 
-    i.addEventListener('click',function(){
-        console.log('i was clicked')
-    })
-})
 
 // miguel you are trying to refactor some code so that it uses up less lines 
 
 // add to how many shoes/product you want
+
 add.addEventListener("click", function () {
     amount += 1;
     quantity.innerHTML = amount;
