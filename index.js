@@ -8,16 +8,14 @@ const btn = document.getElementById("myBtn");
 const btn1 = document.getElementById("myBtn1");
 const btn2 = document.getElementById("myBtn2");
 const btn3 = document.getElementById("myBtn3");
-let i = 0;
-let amount = i;
+
 
 const addItemsCount = [add,minus];
 
 
-
-// miguel you are trying to refactor some code so that it uses up less lines 
-
 // add to how many shoes/product you want
+let i = 0;
+let amount = i;
 
 add.addEventListener("click", function () {
     amount += 1;
