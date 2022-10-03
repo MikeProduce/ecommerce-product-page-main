@@ -4,13 +4,12 @@ const minus = document.getElementById("minus");
 const add = document.getElementById("plus");
 const quantity = document.getElementById("num");
 const modal = document.getElementById("myModal");
-const btn = document.getElementById("myBtn");
-const btn1 = document.getElementById("myBtn1");
-const btn2 = document.getElementById("myBtn2");
-const btn3 = document.getElementById("myBtn3");
-
-
-const addItemsCount = [add,minus];
+const closebtn = document.getElementById("closebtn");
+const icon = document.getElementById("icon");
+const shoppingmodal = document.getElementById("myShoppingModal");
+const Shopbtn = document.getElementById("myShoppingBtn");
+const span = document.getElementsByClassName("close")[0];
+const btnAll = document.querySelectorAll('#btn')
 
 
 // add to how many shoes/product you want
@@ -21,6 +20,7 @@ add.addEventListener("click", function () {
     amount += 1;
     quantity.innerHTML = amount;
 });
+
 minus.addEventListener("click", function () {
     amount = amount <= 1 ? 0 : (amount -= 1);
     return (quantity.innerHTML = amount);
@@ -38,6 +38,7 @@ function setSlide(number) {
     document.querySelectorAll(".thumbImage")[number - 1].style.border =
         "3px solid orange";
 }
+
 function clearSelected() {
     Array.from(document.querySelectorAll(".thumbImage")).forEach(
         (item) => (item.style.border = "")
@@ -71,12 +72,9 @@ function showSlides(n) {
     });
 }
 
-// Get the <span> element that closes the modal
-const span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal 
-const btns = [btn, btn1, btn2, btn3];
-btns.forEach((number) => {
+btnAll.forEach((number) => {
     number.addEventListener("click", function () {
         modal.style.display = "block";
     });
@@ -93,11 +91,6 @@ window.addEventListener("click", function (event) {
         modal.style.display = "none";
     }
 });
-
-// shopping cart modal
-const shoppingmodal = document.getElementById("myShoppingModal");
-// Get the button that opens the modal
-const Shopbtn = document.getElementById("myShoppingBtn");
 // When the user clicks on the button, open the modal
 Shopbtn.onclick = function () {
     shoppingmodal.style.display = "block";
@@ -109,7 +102,6 @@ window.onclick = function (event) {
     }
 };
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-const icon = document.getElementById("icon");
 icon.addEventListener("click", function myFunction() {
     const topnav = document.getElementById("myTopnav");
 
@@ -121,8 +113,6 @@ icon.addEventListener("click", function myFunction() {
     }
 });
 // this button deletes the responsive class and also deletes the inline style css in the html
-const closebtn = document.getElementById("closebtn");
-
 closebtn.addEventListener("click", function closeNav() {
     document.getElementById("myTopnav").style.removeProperty("width");
 

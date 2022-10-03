@@ -20,11 +20,14 @@ h1,
 .percentoff,
 .plus,
 .minus,
-.num {
+.num,
+.ParentElement,.cart,h5,h6,.addcart1,.numlol,.insidemodal,.shopping-modal  {
     font-family: "Kumbh Sans", sans-serif;
 }
 
-h1 {
+h1,.navbar .logo,.cart,.sneaker-logo,.money,.off,.percentoff,.addcart,.plus,
+.minus,
+.num,.addcart1,h6::after  {
     font-weight: 700;
 }
 
@@ -33,109 +36,114 @@ h1 {
     height: 55px;
     border: 3px solid white;
 }
+.profile-img:hover,.next,.prev{
+    border-radius: 50%;
+}
 
 .profile-img:hover {
     padding: 0;
     border: 3px solid orange;
-    border-radius: 50%;
+}
+.navbar,.buyItem,.addcart1{
+    width: 90%;
+
+}
+
+.navbar,.buyItem,.addcart1,.devider,.slideContainer,.Slide1{
+    margin-left: auto;
+    margin-right: auto; 
 }
 
 .navbar {
     overflow: hidden;
-    width: 90%;
     margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+.navbar a,.close:hover,
+.close:focus {
+    text-decoration: none;
+}
+
+.navbar a,.devider,.percentoff,.shopping-cartline{
+    color: hsl(220, 14%, 75%);
 }
 
 .navbar a {
     float: left;
     padding: 18px;
     color: hsl(220, 14%, 75%);
-    text-decoration: none;
     line-height: 45px;
     min-height: 70px;
 }
 
+.navbar .nav-item:hover,.navbar .logo,h6::after{
+    color:black;
+}
+
 .navbar .nav-item:hover {
-    color: black;
     border-bottom: 5px solid hsl(26, 100%, 55%);
     line-height: 40px;
 }
 
 .navbar .logo {
     font-size: 35px;
-    color: black;
-    font-weight: 700;
+}
+
+
+.navbar-right,.miniflex,.buttons-div,.buyItem{
+    display: flex;
 }
 
 .navbar-right {
     float: right;
     margin-right: 0px;
-    display: flex;
     padding-top: 10px;
 }
 
-.svg {
+.svg,.shopping-section,.Slide,.big-img,.thumbImage,.modal{
     width: 100%;
+}
+
+.svg {
     height: 25px;
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 50px;
 }
 
-/* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
-.cart {
-    font-weight: 700;
-    font-family: "Kumbh Sans", sans-serif;
+.cart,.modal-content {
     padding: 20px;
 }
 
 .devider {
-    margin-left: auto;
-    margin-right: auto;
-    color: hsl(220, 14%, 75%);
     max-width: 90%;
 }
 
 /* display section  */
-
 .shopping-section {
     margin-top: 2rem;
     display: table;
-    width: 100%;
     height: 40px;
 }
 
-.display-div1 {
+.display-div,.display-div1 {
     display: table-cell;
     vertical-align: top;
     width: 50%;
-    height: 100%;
 }
-.display-div {
-    display: table-cell;
-    vertical-align: top;
-    width: 50%;
-    height: 100%;
-}
+
 
 /* shopping text section  */
-.mobileprev {
-    display: none;
-}
-.mobilenex {
+.mobileprev,.mobilenex,.Slide,.Slide1,.modal,.shopping-modal,.numlol,.topnav .icon,.topnav .closebtn {
     display: none;
 }
 
-.display-div1 {
+.display-div1,.ParentElement,.shoppingcart-content {
     text-align: left;
 }
 
 .sneaker-logo {
     margin-top: 5rem;
-    color: hsl(26, 100%, 55%);
-    font-weight: 700;
     margin-bottom: 1rem;
     font-size: 100%;
 }
@@ -146,46 +154,51 @@ h1 {
 .sized-div {
     width: 60%;
 }
+
+.description-shoes,.insidemodal,h6,h5{
+    color: hsl(219, 9%, 45%);
+}
 .description-shoes {
     font-size: 16px;
-    color: hsl(219, 9%, 45%);
     margin-bottom: 3rem;
     line-height: 1.4rem;
 }
-.miniflex {
-    display: flex;
-}
+
 
 .money {
     font-size: 150%;
-    font-weight: 700;
+}
+
+.thumbnail,.off,.num {
+    text-align: center;
+}
+
+.off,.plus,
+.minus,.sneaker-logo{
+    color: hsl(26, 100%, 55%);
 }
 .off {
     margin-left: 1rem;
     background: hsl(25, 100%, 94%);
-    color: hsl(26, 100%, 55%);
-    text-align: center;
     height: 25px;
     width: 45px;
     border-radius: 4px;
     margin-top: auto;
     margin-bottom: auto;
-    font-weight: 700;
     font-size: 100%;
 }
 .percentoff {
-    color: hsl(220, 14%, 75%);
-    font-weight: 700;
     text-decoration: line-through;
     margin-bottom: 2rem;
 }
+.addcart,.addcart1,.numlol {
+    background-color: hsl(26, 100%, 55%);
+
+}
 .addcart {
     width: 70%;
-    background-color: hsl(26, 100%, 55%);
     color: white;
-    border-style: none;
     border-radius: 7px;
-    font-weight: 700;
     margin-left: 1rem;
 }
 .addcart:hover {
@@ -204,28 +217,25 @@ h1 {
 .minus:hover {
     color: hsl(25, 100%, 70%);
 }
+
 .plus,
-.minus {
-    color: hsl(26, 100%, 55%);
+.minus,
+.num,.addcart,.prev,.next,.delete,.addcart1{
+    border-style: none;
 }
 .plus,
 .minus,
 .num {
     width: 15%;
     background-color: hsl(223, 64%, 98%);
-    border-style: none;
     height: 50px;
     font-size: 25px;
-    font-weight: 700;
 }
 .num {
-    text-align: center;
     vertical-align: middle;
     line-height: 50px;
 }
-.buttons-div {
-    display: flex;
-}
+
 .cart-icon {
     margin-right: 0.2rem;
     fill: white;
@@ -234,29 +244,19 @@ h1 {
 }
 
 /* slides section  */
-.Slide {
-    display: none;
-    width: 100%;
-}
 .Slide1 {
     width: 80%;
-    display: none;
 }
 .big-img {
     vertical-align: middle;
-    width: 100%;
     height: 450px;
-    border-radius: 15px;
 }
-.thumbImage {
-    width: 100%;
+.thumbImage,.big-img {
     border-radius: 15px;
 }
 .slideContainer {
     width: 65%;
     margin-top: 3rem;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .thumbnail:after {
@@ -264,9 +264,7 @@ h1 {
     display: table;
     clear: both;
 }
-.thumbnail {
-    text-align: center;
-}
+
 .imageCol {
     width: 20%;
     margin-right: 8px;
@@ -275,38 +273,26 @@ h1 {
 .imageCol:nth-of-type(1) {
     margin-left: 8px;
 }
-.thumbImage {
+.thumbImage,.modal,.modal-content,.shopping-modal,.display-div,.display-div1 {
     height: 100%;
-    height: auto;
 }
 .thumbImage:hover {
     opacity: 0.5;
 }
 
 /* The modal  */
-/* The Modal (background) */
 .modal {
-    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
 }
 
-.Slide1 {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .modal-content {
     margin: 8% auto;
-    padding: 20px;
     width: 45%;
-    height: 100%;
 }
 
 .close {
@@ -320,75 +306,55 @@ h1 {
 .close:hover,
 .close:focus {
     color: orange;
-    text-decoration: none;
     cursor: pointer;
+}
+.next,.prev{
+    border-radius: 50%;
+    position: relative;
+    min-height: 70px;
+    top: 250px;
+    width: 10%;
 }
 
 .next {
-    border-radius: 50%;
     margin-right: 40px;
-    position: relative;
-    width: 10%;
-    min-height: 70px;
     float: right;
-    top: 250px;
-    border-style: none;
-}
-.prev {
-    border-radius: 50%;
-    position: relative;
-    min-height: 70px;
-    width: 10%;
-    top: 250px;
-    border-style: none;
 }
 
+
 /* shopping cart modal  */
-/* The Modal (background) */
-.shopping-modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+
+.shopping-modal { 
+    position: fixed; 
+    z-index: 1; 
     left: 0;
     top: 100;
-    width: 110%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0); /* Black w/ opacity */
+    width: 110%; 
+    overflow: auto; 
+    background-color: rgb(0, 0, 0); 
+    background-color: rgba(0, 0, 0, 0); 
 }
 
 /* Modal Content/Box */
 
 .shoppingcart-content {
-    text-align: left;
     background-color: #fefefe;
     border: 1px solid #888;
-    width: 20%; /* Could be more or less, depending on screen size */
+    width: 20%;
     height: 30%;
     position: absolute;
     top: 70px;
     right: 15%;
-    /* left: 10%; */
     border-radius: 10px;
     min-width: 285.188px;
     min-height: 285.188px;
 }
 
-.ParentElement {
-    /* padding: 30px 0; */
-    text-align: left;
-    font-family: "Kumbh Sans", sans-serif;
-    /* color: hsl(220, 14%, 75%); */
-}
+
 .buyItem {
-    display: flex;
     flex-direction: row;
     align-items: stretch;
     align-items: center;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
     position: relative;
 }
 .buyItem > .inlineShop {
@@ -404,57 +370,27 @@ h1 {
     height: 55px;
 }
 .addcart1 {
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 1rem;
-    width: 90%;
     height: 55px;
     margin-bottom: 2rem;
     border-radius: 10px;
-    font-family: "Kumbh Sans", sans-serif;
-    background-color: hsl(26, 100%, 55%);
     color: white;
-    border-style: none;
-    font-weight: 700;
 }
-h5 {
+h5,h6 {
     font-size: 16px;
-    font-family: "Kumbh Sans", sans-serif;
     font-weight: 500;
-    color: hsl(219, 9%, 45%);
 }
-h6 {
-    font-size: 16px;
-    font-family: "Kumbh Sans", sans-serif;
-    font-weight: 500;
-    color: hsl(219, 9%, 45%);
-}
+
 h6::after {
     content: attr(data-end);
-    color: black;
-    font-weight: 700;
-}
-.delete {
-    border-style: none;
 }
 
 .insidemodal {
-    color: hsl(219, 9%, 45%);
-    font-family: "Kumbh Sans", sans-serif;
     font-weight: 500;
     margin-top: 50px;
     text-align: center;
 }
 
-/* accordion nav */
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-    display: none;
-}
-.topnav .closebtn {
-    display: none;
-}
 
 /* this part is for the modal shopping div  */
 .cartmodal {
@@ -463,37 +399,28 @@ h6::after {
 }
 .shopping-cartline {
     margin-bottom: 20px;
-    color: hsl(220, 14%, 75%);
-    /* width: 100%; */
 }
 .svg {
     position: relative;
 }
 
 .numlol {
-    display: none;
     line-height: 12px;
     text-align: center;
     font-size: 80%;
     height: 12px;
     width: 20px;
     position: absolute;
-    font-family: "Kumbh Sans", sans-serif;
-    background-color: hsl(26, 100%, 55%);
     margin-left: 12px;
     margin-top: 8px;
     padding: 3px;
     border-radius: 40px;
     color: white;
-    display: none;
 }
 
-/* .topnav {
-    display: flex;
-} */
+
 
 /* media querys
- */
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 1080px) {
     .topnav a:not(:first-child) {
@@ -695,7 +622,6 @@ h6::after {
     .off {
         font-size: 160%;
         margin: 0;
-        /* margin-bottom: 100%; */
         margin-left: 5%;
         text-align: none;
         width: fit-content;
@@ -726,36 +652,33 @@ h6::after {
     }
     .shopping-modal {
         margin-top: 30px;
-        font-family: "Kumbh Sans", sans-serif;
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
+        display: none; 
+        position: fixed;
+        z-index: 1; 
         left: 0;
         top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0, 0, 0); /* Fallback color */
-        background-color: rgba(0, 0, 0, 0); /* Black w/ opacity */
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; 
+        background-color: rgb(0, 0, 0); 
+        background-color: rgba(0, 0, 0, 0);
     }
     .shoppingcart-content {
         text-align: left;
         background-color: #fefefe;
-        /* margin: 8% 0% 0% 65%; */
         border: 1px solid #888;
-        width: 100%; /* Could be more or less, depending on screen size */
+        width: 100%; 
         height: 250px;
         position: absolute;
         top: 60px;
         right: 5%;
-        /* left: 10%; */
         border-radius: 10px;
         max-width: 90%;
     }
 
     .ParentElement {
         text-align: left;
-        font-family: "Kumbh Sans", sans-serif;
+
     }
     .buyItem {
         display: flex;
@@ -830,7 +753,6 @@ h6::after {
         width: 150px;
     }
     .numlol {
-        /* display: none; */
         line-height: 12px;
         text-align: center;
         font-size: 80%;
