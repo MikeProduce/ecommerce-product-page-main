@@ -494,19 +494,20 @@ h6::after {
         top: -20px;
         margin-left: 2.5%;
     }
+    .shopping-section,.display-div,.display-div1,.big-img,.slideContainer,.mobilediv,.addcart,.buttons-div,.mobile-div,.miniflex {
+        width: 100%;
+    }
 
     .shopping-section {
         margin-top: 0rem;
         display: table;
-        width: 100%;
         height: 40px;
     }
 
-    .display-div {
+    .display-div,.display-div1 {
         float: left;
         display: table-cell;
         vertical-align: top;
-        width: 100%;
         height: 100%;
     }
 
@@ -514,19 +515,12 @@ h6::after {
         margin-top: 0px;
         margin-left: auto;
         margin-right: auto;
-        float: left;
-        display: table-cell;
-        vertical-align: top;
-        width: 100%;
-        height: 100%;
     }
     .big-img {
         border-radius: 0px;
         height: 100%;
-        width: 100%;
     }
     .slideContainer {
-        width: 100%;
         margin: 0px;
         height: 100%;
         padding: 0px;
@@ -540,7 +534,6 @@ h6::after {
     .mobilediv {
         position: absolute;
         height: 500px;
-        width: 100%;
     }
 
     .mobilenex {
@@ -588,13 +581,11 @@ h6::after {
     .buttons-div {
         margin-top: 1rem;
         flex-wrap: wrap;
-        width: 100%;
     }
     .addcart {
         margin-left: auto;
         margin-right: auto;
         margin-top: 1rem;
-        width: 100%;
         height: 50px;
         margin-bottom: 2rem;
         border-radius: 10px;
@@ -609,10 +600,8 @@ h6::after {
     }
     .miniflex {
         gap: 0px;
-        width: 100%;
     }
     .mobile-div {
-        width: 100%;
         display: flex;
         float: right;
     }
