@@ -757,4 +757,10 @@ h6::after {
         color: white;
         display: none;
     }
+    .modal{
+        display: none;
+    }
+    #myModal{
+        display: none;
+    }
 }

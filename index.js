@@ -35,7 +35,7 @@ function plusSlides(n) {
 function setSlide(number) {
     clearSelected();
     currentSlide(number);
-    document.querySelectorAll(".thumbImage")[number - 1].style.border =
+    document.quemrySelectorAll(".thumbImage")[number - 1].style.border =
         "3px solid orange";
 }
 
@@ -76,7 +76,9 @@ function showSlides(n) {
 // When the user clicks on the button, open the modal 
 btnAll.forEach((number) => {
     number.addEventListener("click", function () {
-        modal.style.display = "block";
+        if (window.screen.width > 768){
+         modal.style.display = "block"}
+         else {modal.style.display = 'none'}
     });
 });
 
