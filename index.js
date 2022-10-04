@@ -115,6 +115,12 @@ Shopbtn.addEventListener('click', function(){
 // When the user clicks anywhere outside of the modal, close it
 window.addEventListener('click',function(event){if (event.target == shoppingmodal) {
     shoppingmodal.style.display = "none";
+    console.log(event);
+}});
+
+window.addEventListener('touchend',function(event){if (event.target == shoppingmodal) {
+    shoppingmodal.style.display = "none";
+    console.log(event);
 }});
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
