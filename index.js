@@ -72,21 +72,30 @@ function showSlides(n) {
     });
 }
 
+// makes adjustments to the user resizing the window and based on width the user can open the modal 
+window.addEventListener("resize", function(event) {
+    let screenSize = document.body.clientWidth;
+    btnAll.forEach((number) => {
+        number.addEventListener("click", function () {
+            if (screenSize > 768){modal.style.display = "block"}
+             else {modal.style.display = 'none'}
+        });
+    });
 
-// When the user clicks on the button, open the modal 
+});
+// this is on load so when the user loads into the site itll take that width and input it to the activation of the modal 
+let screenSizeOnLoad = document.body.clientWidth;
 btnAll.forEach((number) => {
-    const screenSize = window.screen.width;
-    console.log(screenSize);
-
     number.addEventListener("click", function () {
-        if (screenSize > 768){
-            console.log(screenSize);
-            console.log('hi')
+        if (screenSizeOnLoad > 768){
          modal.style.display = "block"}
-         else {modal.style.display = 'none'
-        console.log('no')}
+         else {modal.style.display = 'none'}
     });
 });
+
+
+// When the user clicks on the button, open the modal 
+
 
 // When the user clicks on <span> (x), close the modal
 span.addEventListener("click", function () {
