@@ -100,13 +100,13 @@ window.addEventListener("click", function (event) {
     }
 });
 // When the user clicks on the button, open the modal
-Shopbtn.addEventListener("click", function(){
+Shopbtn.addEventListener('click', function(){
     shoppingmodal.style.display = "block";
 });
 // When the user clicks anywhere outside of the modal, close it
-window.addEventListener('click',function(){
+window.addEventListener('click',function(event){if (event.target == shoppingmodal) {
     shoppingmodal.style.display = "none";
-});
+}});
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 icon.addEventListener("click", function myFunction() {
