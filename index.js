@@ -75,10 +75,16 @@ function showSlides(n) {
 
 // When the user clicks on the button, open the modal 
 btnAll.forEach((number) => {
+    const screenSize = window.screen.width;
+    console.log(screenSize);
+
     number.addEventListener("click", function () {
-        if (window.screen.width > 768){
+        if (screenSize < 768){
+            console.log(screenSize);
+            console.log('hi')
          modal.style.display = "block"}
-         else {modal.style.display = 'none'}
+         else {modal.style.display = 'none'
+        console.log('no')}
     });
 });
 
