@@ -79,7 +79,7 @@ btnAll.forEach((number) => {
     console.log(screenSize);
 
     number.addEventListener("click", function () {
-        if (screenSize < 768){
+        if (screenSize > 768){
             console.log(screenSize);
             console.log('hi')
          modal.style.display = "block"}
