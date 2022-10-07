@@ -53,7 +53,7 @@ addCart.addEventListener("click", function () {
 
         const deleteCart = document.querySelector(".delete");
 
-        deleteCart.addEventListener("click", function () {
+        deleteCart.addEventListener("click", () => {
             let noItems = `<p class="insidemodal">Your cart is empty.</p>`;
             parentElement.innerHTML = noItems;
             amountOfItems.style.display = "none";

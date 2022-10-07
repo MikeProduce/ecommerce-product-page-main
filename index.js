@@ -16,12 +16,12 @@ const btnAll = document.querySelectorAll('#btn')
 let i = 0;
 let amount = i;
 
-add.addEventListener("click", function () {
+add.addEventListener("click",() => {
     amount += 1;
     quantity.innerHTML = amount;
 });
 
-minus.addEventListener("click", function () {
+minus.addEventListener("click", () => {
     amount = amount <= 1 ? 0 : (amount -= 1);
     return (quantity.innerHTML = amount);
 });
@@ -103,22 +103,22 @@ span.addEventListener("click", function () {
 });
 
 // When the user clicks anywhere outside of the modal, close it
-window.addEventListener("click", function (event) {
+window.addEventListener("click",(event) => {
     if (event.target == modal) {
         modal.style.display = "none";
     }
 });
 // When the user clicks on the button, open the modal
-Shopbtn.addEventListener('click', function(){
+Shopbtn.addEventListener('click', () => {
     shoppingmodal.style.display = "block";
 });
 // When the user clicks anywhere outside of the modal, close it
-window.addEventListener('click',function(event){if (event.target == shoppingmodal) {
+window.addEventListener('click',(event) => {if (event.target == shoppingmodal) {
     shoppingmodal.style.display = "none";
     console.log(event);
 }});
 
-window.addEventListener('touchend',function(event){if (event.target == shoppingmodal) {
+window.addEventListener('touchend',(event) => {if (event.target == shoppingmodal) {
     shoppingmodal.style.display = "none";
     console.log(event);
 }});
